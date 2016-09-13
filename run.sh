@@ -3,7 +3,7 @@
 python manage.py migrate --fake-initial --noinput --settings=$DJANGO_SETTINGS_MODULE
 
 
-python manage.py initadmin --username=admin --password=yz2rsMcaj3UJ3daRswBd --settings=$DJANGO_SETTINGS_MODULE
+# python manage.py initadmin --username=admin --password=yz2rsMcaj3UJ3daRswBd --settings=$DJANGO_SETTINGS_MODULE
 
 #python manage.py add_sites --settings=$DJANGO_SETTINGS_MODULE
 
