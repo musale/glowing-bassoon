@@ -1,0 +1,16 @@
+db:
+  image: postgres:9.5
+  environment:
+    - POSTGRES_DB=fortis_db
+    - POSTGRES_PASSWORD=mysecretpassword
+
+web:
+  build: .
+  volumes:
+    - ./:/usr/src/app
+  ports:
+    - '5000:80'
+  links:
+    - db
+  environment:
+    - 'DATABASE_URL=postgres://postgres:mysecretpassword@db:5432/fortis_db'
